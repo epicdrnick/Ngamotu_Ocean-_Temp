@@ -1,0 +1,3 @@
+#!/bin/sh
+    export HASS_TOKEN="$HASS_TOKEN"
+    npm run dev

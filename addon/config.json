@@ -1,0 +1,23 @@
+{
+      "name": "Ocean Temperature Iframe",
+      "version": "1.0.0",
+      "slug": "ocean_temp_iframe",
+      "description": "Displays ocean temperature data in an iframe.",
+      "arch": ["amd64", "armhf", "armv7", "aarch64"],
+      "startup": "application",
+      "boot": "auto",
+      "options": {
+        "hass_token": ""
+      },
+      "schema": {
+        "hass_token": {
+          "type": "string",
+          "title": "Home Assistant API Token",
+          "description": "Your Home Assistant long-lived access token."
+        }
+      },
+      "ports": {
+        "8080/tcp": 8080
+      },
+      "map": ["config:rw"]
+    }
